@@ -13,6 +13,7 @@
 
 		<nav id="menu">
 			<a  class="btn" href="projet.html">Projet</a>
+			<a class="btn" id="firework">Mystère</a>
 		</nav>
 
 		<br>
@@ -104,6 +105,14 @@
 					</ul>
 				</section>
 			</div>
+			<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+			<script>document.getElementById("firework").addEventListener("click", () => {
+				confetti({
+					particleCount: 100,
+					spread: 70,
+					});
+				});
+			</script>
 		</main>
 
 		<br>
@@ -113,4 +122,5 @@
 			<a class="btn" href="mailto:tom.pasero@etu.unilim.fr">mail</a>
 		</footer>
 	</body>
+
 </html>
