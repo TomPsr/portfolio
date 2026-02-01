@@ -1,0 +1,110 @@
+@font-face { 
+	font-family: 'ReggaeOne'; /* le nom de ma police des titres pour ma feuille de style */ 
+	src: url('fonts/ReggaeOne-Regular.ttf') format('truetype'); /* l'emplacement du fichier de ma police de caractères */ 
+} 
+
+@font-face { 
+	font-family: 'Sukar'; /* le nom de ma police du corps de texte pour ma feuille de style */ 
+	src: url('fonts/SukarRegular.ttf') format('truetype'); /* l'emplacement du fichier de ma police de caractères */ 
+} 
+
+body { 
+	background-color: #fdf7f0; 
+	color: #3a3535; 
+	font-family: 'Sukar'; 
+} 
+
+main { 
+	/*modification des balises articles et des balises p car elles sont inclues dans le main*/ 
+	text-align: justify; margin-left: 15%; margin-right: 15%; 
+} 
+	
+h1,h2 { 
+	color: #95bbec; 
+	font-family: 'ReggaeOne'; 
+	text-align:center;
+} 
+
+h3, h4 { 
+	color: #c37bbe; 
+	font-family: 'ReggaeOne'; 
+} 
+
+h3, p {
+	text-align:center;
+}
+
+
+
+header {
+	border-bottom : 2px solid;
+	width : 100%;
+}
+
+footer {
+	padding-top:3px;
+	border-top : 1px solid;
+	width : 100%;
+}
+
+a {
+	color: #3a3535;
+}
+
+/*mettre d'abord le visited avant le hover car le css se lit dans l'ordre, si on a déjà visité un site on veut quand même avoir le changement de couleur*/
+a:visited{
+    color: #c37bbe;
+}
+
+a:hover {
+    color:#95bbec;
+}
+
+#menu {
+	padding-top:3px;
+	text-align:center;
+}
+
+.bloc {
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+	margin: 30px 0;
+}
+
+.bloc section {
+	width: 48%;
+}
+
+section {
+	background-color: #ffffff;
+	padding: 5px 25px;
+	margin: 25px 0;
+	border-radius: 8px;
+}
+
+.btn {
+	display: inline-block;
+	background: #95bbec;
+	color: #c37bbe;
+	padding: 8px 10px;
+	border-radius: 20px;
+}
+
+.btn:hover {
+	background: #c37bbe;
+}
+
+.lien {
+	display:block;
+	text-align:center;
+	background: #95bbec;
+	color: #c37bbe;
+	padding: 8px 10px;
+	border-radius: 20px;
+}
+
+.lien:hover {
+	background: #c37bbe;
+}
+
